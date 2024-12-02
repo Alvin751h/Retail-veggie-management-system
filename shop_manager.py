@@ -11,9 +11,8 @@ from tensorflow.python.keras.models import load_model
 import cv2
 from prettytable import PrettyTable
 import numpy as np
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '0'  # Enables debug logging
-model = load_model('vegetable-classification-cnn-accuracy-93 (1).ipynb')  # Your trained model
-labels = {0: "chips", 1: "biscuits", 2: "bottle"} # Replace with your label mappings
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '0'  
+model = load_model('vegetable-classification.ipynb')  #  trained model
 
 def select_image():
     root = tk.Tk()
