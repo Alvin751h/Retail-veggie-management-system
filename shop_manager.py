@@ -13,7 +13,6 @@ from prettytable import PrettyTable
 import numpy as np
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '0'  
 model = load_model('vegetable-classification.ipynb')  #  trained model
-
 def select_image():
     root = tk.Tk()
     root.withdraw()  # Hide the root window
